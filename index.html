@@ -13,15 +13,17 @@ Tartu <abbr title="Tartu Kutsehariduskeskus">KHK asub Tartus</abbr> <br>
 <address>
     Autor: Jürgen Hallast
 </address>
-
+<main>
 <img src="MoonStars.jpg" width="851" height="315" alt="MoonStars" usemap="#moonButton">
 <map name = "moonButton">
-    <area shape="circle" coords="665,85,39" alt="Moon" href="https://en.wikipedia.org/wiki/Moon">
+    <area shape="circle" coords="665,85,39" alt="Moon" href="https://en.wikipedia.org/wiki/Moon" target="_blank">
 </map>
+    </main>
 <article>
     <h3>Kuu</h3>
     <p>Kuu on Maale lähim taevakeha</p>
 </article>
+<hr>
 
 <h3>Hundid uluvad vahel kuu poole</h3>
 <aside>
@@ -34,29 +36,203 @@ Tartu <abbr title="Tartu Kutsehariduskeskus">KHK asub Tartus</abbr> <br>
 <h4><bdi>Hundid</bdi> elavad metsa sees mitmekesi koos<br>
     <bdo dir="rtl">Üksikuid hunte näeb harva</bdo>
 </h4>
+<section>
+    <h3>Gray wolf</h3>
 <blockquote cite="https://en.wikipedia.org/wiki/Gray_wolf">
-    The gray wolf or grey wolf (Canis lupus) <br>
-    also known as the timber wolf, or western wolf, is a canid native <br>
+    The gray wolf or grey wolf <mark>(Canis lupus)</mark> <br>
+    also known as the <i>timber wolf</i>, or western wolf, is a canid native <br>
     to the wilderness and remote areas of North America and Eurasia
 </blockquote>
-<button type="button">Kliki</button>
-<canvas id="testCanvas" width="400" height="200" border="2px solid blue"></canvas>
-
-
+    </section>
+<button type="button" id="btn1">Kliki</button>
+<button type="button" id="btn2">Kliki</button> <br>
+<button type="button" id="btn3">Kliki</button>
+<button type="button" id="btn4">Kliki</button>
+<br>
+<canvas id="testCanvas" width="400" height="200"></canvas>
+<h3 id="tabeliPealkiri">Pisike proov tabelist</h3>
+<div id="testiTabel">
 <table border="1px solid black">
+    <colgroup>
+        <col span="2" style="background-color:lightblue">
+        <col style="background-color:yellow">
+    </colgroup>
     <caption>Testitabel</caption>
     <thead>
-    <th colspan="2"> Test </th>
+    <th colspan="3"> Test <dialog open>Vali test</dialog> </th>
     </thead>
+    <tbody>
     <tr>
         <td>Test 1</td>
         <td>Test 2</td>
-
+        <td>Test 3</td>
     </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td></td>
+        <td>Kokku</td>
+        <td>3 testi</td>
+    </tr>
+    </tfoot>
 </table>
+</div>
+<wbr>
+<p><cite>Libahunt</cite> August Kitzberg, tragöödia</p>
+<h6><dfn>Libahunt</dfn> on inimene, kes on hunt ja vastupidi </h6>
+<code><var> $hunt </var> = "Libahunt" </code>
+<h5>Eile oli ringi jooksmas <del>libahunte</del> <ins>hallhunte</ins>!</h5>
+<form action="hundid.asp" method="post">
+    Keygen <keygen name="key">
+    <em>Milline hunt</em> <input list="huntType" name="huntType">
+    <datalist id="huntType">
+        <option value="Hallhunt">
+        <option value="Libahunt">
+        <option value="Hunt Kriimsilm">
+        </datalist>
+    <input type="submit">
+</form>
+
+<dl>
+    <dt>Hallhunt</dt>
+    <dd>Ei ole must ega valge, seal vahepeal, hall</dd>
+    <dt>Libahunt</dt>
+    <dd>Ei ole <i>hunt</i> ega inimene, seal vahepeal</dd>
+</dl>
+
+<embed type="video/mpeg4" src="external.source" width="300" height="200">
+
+    <figure>
+        <img src="hallhunt.jpg" alt="Hallhunt">
+        <figcaption>Hallhunt</figcaption>
+    </figure>
 
 
+<header>
+    <p>Tartu KHK</p>
+    </header>
+<iframe src="MoonStars.jpg">Keritav pilt</iframe><br>
+<kbd>See on klaviatuuriga sisestatud</kbd><br>
 
+    <label for="Hunt">Libahunt</label>
+    <input type="radio" name="tyyp" id="Hunt" value="Libahunt"><br>
+    <label for="Hunt2">Lihtsalt hunt</label>
+    <input type="radio" name="tyyp" id="Hunt2" value="Lihtsalt hunt"><br>
 
+    <form>
+        <fieldset>
+            <legend>Andmed</legend>
+            Nimi: <input type="text"><br>
+            Elukoht: <input type="text"><br>
+            Vanus: <input type="text">
+        </fieldset>
+    </form>
+
+<menu type="toolbar">
+<menuitem label="Menu">
+</menuitem>
+    </menu>
+
+    <meter value="70" min="0" max="100">Rohkem kui pool</meter><br>
+
+    <nav>
+        <a href="www.wikipedia.org">Wiki</a> |
+        <a href="www.google.com">Google</a> |
+        <a href="www.facebook.com">Facebook</a> |
+        <a href="www.Twitter.com">Twitter</a>
+        </nav>
+    <br>
+    <script>
+        document.write("Tere JS")
+    </script>
+    <noscript>Sul on JS puudu</noscript><br>
+    <object width="800" height="100" data="wolfHowl.mp3">
+    </object>
+    <ul>
+        <li>Sorteerimata nimekiri</li>
+        <li>Jutt jutu otsas</li>
+    <ol>
+        <li>Esimene</li>
+        <li>Teine</li>
+        <li>Kolams</li>
+    </ol>
+        </ul>
+    <br>
+<select>
+        <optgroup label="Taevakehad">
+            <option value="Maa">Maa</option>
+            <option value="Kuu">Kuu</option>
+        </optgroup>
+        <optgroup label="Hundid">
+            <option value="Hall">Hall</option>
+            <option value="Liba">Liba</option>
+        </optgroup>
+</select>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="a" value="">
+        +<input type="number" id="b" value="">
+        =<output name="x" for="a b"></output>
+</form>
+<object data="wolfHowl.mp3">
+        <param name="autoplay" value="true">
+</object>
+
+<h4 id="pre">Eelformaaditud tekst</h4>
+<pre>
+Eelformaditud tekst "pre" tag'ides
+kuvatakse eelmääratud suuruses-laiuses,
+    tühikutega          reavahedega jne
+
+Tühja reaga
+</pre>
+<h4>Tag'ide projekt valmis : 0%<progress value="45" max="100"></progress> 100% </h4><br>
+<q>See on tsitaat</q><br>
+<samp>See on programmi väljatrüki näidis</samp><br>
+<p><u>On alljajoonitud tekst, mis alates</u> <small>sellest sõnast läheb väiksemaks</small> ja sealt järgmisena <sub>sellest sõnast alates subscript'iks</sub> ja sealt edasi <sup>sellest sõnast superscript'iks</sup> ning viimane sõna on väga <strong>oluline</strong></p><br>
+
+<textarea>
+    Pane siia kirja oma parimad mõtted
+</textarea>
+    <p>See on aeg <time datetime="1983-04-20 05:30">kui selle kõige autor sündis</time>.</p>
+    <p>See on aeg <time datetime="1983-04-20 05:30">kui selle kõige autor sündis</time>.</p>
+
+    <div id="legends">
+        <h3>Legends</h3>
+        <p>Baltic and Slavic
+            The Slavic languages share a term for "werewolf" derived from a Common Slavic vlko-dlak "wolf-furr".
+
+            According to legend, the establishment of the Lithuanian capital Vilnius began when the grand duke Gediminas dreamt of an iron wolf howling near the hill. Lithuanian goddess Medeina was described as a single, unwilling to get married, though voluptuous and beautiful huntress. She was depicted as a she-wolf with an escort of wolves.</p>
+       <img src="wolfMoon.png">
+        <p>Greco-Roman
+            Further information: Lycaon (Arcadia)
+            Mount Lykaion (Λύκαιον ὄρος) is a mountain in Arcadia where an altar of Zeus was located. Zeus Lykaios was said to have been born and brought up on it, and was the home of Pelasgus and his son Lycaon, who is said to have founded the ritual of Zeus practiced on its summit. This seems to have involved a human sacrifice, and a feast in which the man who received the portion of a human victim was changed to a wolf, as Lycaon had been after sacrificing a child. The sanctuary of Zeus played host to athletic games held every four years, the Lykaia.</p>
+    </div>
+    <div id="listid">
+        <ul>
+            <li>Üki</li>
+            <li>Kaki</li>
+            <li>Kommi</li>
+            <li>Nommi</li>
+            <li>Vanamees hüppas üle pommi</li>
+        </ul>
+    </div>
+
+<div id="ruut1"></div>
+    <div id="ruut2"></div>
+<div id="ruut3"></div>
+    <div id="ruut4"></div>
+
+    <div id="columns">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet itaque placeat saepe voluptas voluptatem! Accusantium asperiores delectus deleniti ullam. Delectus dolor fugiat saepe unde! Cupiditate praesentium quasi rem sit
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque delectus distinctio dolores iure magnam quod, ratione repellendus similique unde veritatis! Autem dicta ea error molestias nemo nesciunt odio officiis voluptate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, debitis eius ex iusto magnam maiores nemo neque nesciunt non officia placeat porro provident quis repellat tempora vel vero vitae voluptatibus?
+        </p>
+    </div>
+
+    <footer>
+        <p>Tehtud 2015</p>
+    </footer>
 </body>
 </html>
