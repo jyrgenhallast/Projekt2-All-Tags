@@ -277,8 +277,9 @@ counter-increment: inherit;
     transform: rotateX(45deg);
     -webkit-perspective: 200px;
     perspective: 200px;
-    perspective-origin: 0;
+    perspective-origin: 10% 10%;
     transform-style: initial;
+    transform-origin: initial;
 }
 
 #ruut4 {
@@ -381,4 +382,9 @@ audio {
     mark-after: 1s;
     mark-before: 1s;
 
+}
+
+@font-face {
+    font-family: MinuFont;
+    src: url(minuFont.woff);
 }

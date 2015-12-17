@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <title>Tag'ide projekt</title>
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <base href="#">
+    <style>
+        article {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 <h1>Projekt, kus on palju tag'e</h1>
-<a href="http:/www.khk.ee">Tartu KHK</a> <br>
+<h2>Teine pealkiri ka kohe siia otsa</h2>
+<a href="http:/www.khk.ee">Tartu KHK</a>
+<br>
 Tartu <abbr title="Tartu Kutsehariduskeskus">KHK asub Tartus</abbr> <br>
 <acronym title="Nota Bene"> NB </acronym><br>
 <address>
@@ -100,7 +108,7 @@ Tartu <abbr title="Tartu Kutsehariduskeskus">KHK asub Tartus</abbr> <br>
     <dd>Ei ole <i>hunt</i> ega inimene, seal vahepeal</dd>
 </dl>
 
-<embed type="video/mpeg4" src="external.source" width="300" height="200">
+<source type="video/mpeg4" src="external.source" width="300" height="200">
 
     <figure>
         <img src="hallhunt.jpg" alt="Hallhunt">
@@ -189,14 +197,19 @@ Tühja reaga
 <h4>Tag'ide projekt valmis : 0%<progress value="45" max="100"></progress> 100% </h4><br>
 <q>See on tsitaat</q><br>
 <samp>See on programmi väljatrüki näidis</samp><br>
-<p><u>On alljajoonitud tekst, mis alates</u> <small>sellest sõnast läheb väiksemaks</small> ja sealt järgmisena <sub>sellest sõnast alates subscript'iks</sub> ja sealt edasi <sup>sellest sõnast superscript'iks</sup> ning viimane sõna on väga <strong>oluline</strong></p><br>
+<p> <s>See ei kehti enam</s> <u>See on alljajoonitud tekst, mis alates</u> <small>sellest sõnast läheb väiksemaks</small> ja sealt järgmisena <sub>sellest sõnast alates subscript'iks</sub> ja sealt edasi <sup>sellest sõnast superscript'iks</sup> ning viimane sõna on väga <strong>oluline</strong></p><br>
 
 <textarea>
     Pane siia kirja oma parimad mõtted
 </textarea>
     <p>See on aeg <time datetime="1983-04-20 05:30">kui selle kõige autor sündis</time>.</p>
     <p>See on aeg <time datetime="1983-04-20 05:30">kui selle kõige autor sündis</time>.</p>
-
+    <br>
+    <Video controls>
+        <source src="https://vimeo.com/16874580">Your Browser Failed!>
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="et" label="Estonian"">
+    </video>
+    <br>
     <div id="legends">
         <h3>Legends</h3>
         <p>Baltic and Slavic
@@ -205,7 +218,7 @@ Tühja reaga
             According to legend, the establishment of the Lithuanian capital Vilnius began when the grand duke Gediminas dreamt of an iron wolf howling near the hill. Lithuanian goddess Medeina was described as a single, unwilling to get married, though voluptuous and beautiful huntress. She was depicted as a she-wolf with an escort of wolves.</p>
        <img src="wolfMoon.png">
         <p>Greco-Roman
-            Further information: Lycaon (Arcadia)
+            <span style="font-family: cursive">Further information</span> : Lycaon (Arcadia)
             Mount Lykaion (Λύκαιον ὄρος) is a mountain in Arcadia where an altar of Zeus was located. Zeus Lykaios was said to have been born and brought up on it, and was the home of Pelasgus and his son Lycaon, who is said to have founded the ritual of Zeus practiced on its summit. This seems to have involved a human sacrifice, and a feast in which the man who received the portion of a human victim was changed to a wolf, as Lycaon had been after sacrificing a child. The sanctuary of Zeus played host to athletic games held every four years, the Lykaia.</p>
     </div>
     <div id="listid">
@@ -230,9 +243,12 @@ Tühja reaga
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, debitis eius ex iusto magnam maiores nemo neque nesciunt non officia placeat porro provident quis repellat tempora vel vero vitae voluptatibus?
         </p>
     </div>
-
+    <br>
     <footer>
-        <p>Tehtud 2015</p>
+        <details>
+            <summary>Koopiaõigustatud 1983 - igavesti</summary>
+            <p>Tehtud 2015</p>
+        </details>
     </footer>
 </body>
 </html>
